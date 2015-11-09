@@ -1,0 +1,18 @@
+@CHARSET "UTF-8";
+
+ul{
+	border-style: solid;
+	display: none;
+	width: 200px ;
+	margin-left: auto ;
+    margin-right: auto ;
+}
+.body{
+	border-style: solid;
+	width: 500px ;
+	margin-left: auto ;
+    margin-right: auto ;
+}
+.zwin{
+	display:none;
+}

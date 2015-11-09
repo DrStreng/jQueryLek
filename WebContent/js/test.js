@@ -1,13 +1,11 @@
-window.onload = function(){
-	console.log("test [JS] onload");
-};
+$(document).ready(function () {
 
-$('document').ready(function(){
-	console.log("[JQuery] wywolanie gotowe");
-});
+    $('.nav li').hover(function () { 
+    	$('ul', this).fadeIn();},function () {
+    		$('ul', this).fadeOut();
+	});
 
-$().ready(function(){
-	$(".hide").click(function(){
+    $(".hide").click(function(){
 		$("h1").hide();
 	});
 	
@@ -16,31 +14,68 @@ $().ready(function(){
 	});
 	
 	$(".fadeIn").click(function(){
-		$("h2").fadeIn();
+		$("h1").fadeIn();
 	});
 	
 	$(".fadeOut").click(function(){
-		$("h2").fadeOut();
+		$("h1").fadeOut();
 	});
-	
-	
-	$(".rozwin").click(function(){
-		$("ul").slideDown();
-		$(".rozwin").hide();
-		$(".zwin").show();
-	});
-	
-	$(".zwin").click(function(){
-		$("ul").slideUp();
-		$(".zwin").hide();
-		$(".rozwin").show();
-	});
-	
+
 	$(".fadeToggle").click(function(){
 		$("h1").fadeToggle();
 	});
+
+	$(".reg").click(function(){
+		$("h1").hide();
+		$("h3").hide();
+		$("h2").hide();
+		$("h4").hide();
+		$("h5").slideDown();
+		$("input").slideDown();
+	});
+
+	$(".1").click(function(){
+		$("h1").hide();
+		$("h3").hide();
+		$("h4").hide();
+		$("h5").hide();
+		$("input").hide();
+		$("h2").slideDown();
+	});
+
+	$(".2").click(function(){
+		$("h1").hide();
+		$("h2").hide();
+		$("h4").hide();
+		$("h5").hide();
+		$("input").hide();
+		$("h3").slideDown();
+	});
+
+	$(".3").click(function(){
+		$("h1").hide();
+		$("h3").hide();
+		$("h2").hide();
+		$("h5").hide();
+		$("input").hide();
+		$("h4").slideDown();
+	});
 	
-	$(".fadeTo").click(function(){
-		$("h1").fadeTo();
+	$(".home1").click(function(){
+		$("h1").hide();
+		$("h3").hide();
+		$("h2").hide();
+		$("h5").hide();
+		$("input").hide();
+		$("h4").hide();
+	});
+
+	$(".home2").click(function(){
+		$("h1").hide();
+		$("h3").hide();
+		$("h2").hide();
+		$("h5").hide();
+		$("input").hide();
+		$("h4").hide();
 	});
 });

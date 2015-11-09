@@ -7,23 +7,58 @@
 <script src="./js/test.js"></script>
 <link rel="stylesheet" type="text/css" href="./css/head.css" />
 
+
 </head>
 <body>
-<div class="body">
-	<h1>WITOM</h1>
-	<h2>No Co tam</h2>
-	<div>
-		<ul>
-			<li><p class ="show">show</p></li>
-			<li><p class ="hide">hide 1</p></li>
-			<li><p class ="fadeIn">fadeIn</p></li>
-			<li><p class ="fadeOut">fadeOut</p></li>
-			<li><p class ="fadeToggle">fadeToggle</p></li>
-			<li><p class ="fadeTo">fadeTo</p></li>				
-		</ul>
+	<div class = "logo">
+		<a class="home1" href="#">jQueryLek</a>
+		<img class="logo-char" src="./images/1.png" />
 	</div>
-	<p class ="zwin">zwin</p>
-	<p class ="rozwin">rozwin</p>
-</div>	
+	  	<div class="navigation">
+  		<ul class="nav">
+  			<li>
+  				<a class="home2" href="#">Home</a>
+  			</li>
+  			<li>
+  				<a href="#">Kategories</a>
+  				<ul>
+  					<li><a class="show"        href="#">show</a></li>
+  					<li><a class="hide"        href="#">hide</a></li>
+  					<li><a class ="fadeIn"     href="#">fadeIn</a></li>
+            <li><a class ="fadeOut"    href="#">fadeOut</a></li>
+            <li><a class ="fadeToggle" href="#">fadeToggle</a></li>
+  				</ul>
+  			</li>
+  			<li>
+  				<a href="#">About</a>
+  				<ul>
+  					<li><a class="1" href="#">Contact</a></li>
+  					<li><a class="2" href="#">About Use</a></li>
+  					<li><a class="3" href="#">Help</a></li>
+  				</ul>
+  			</li>
+  			<li>
+  				<a class="reg" href="#">Register</a>
+  			</li>
+  		</ul>
+  	</div>
+    <center>
+	 <div class = "midlaine">
+   <h1>TEST</h1>
+   <h2>Jakis Addres</h2>
+   <h3>O nas:<p> Jakiś Tekst</p></h3>
+   <h4>Pomoc<br /><p>W czym ci pomuc</p></h4>
+   <div class="register">
+      <div class="log" ng-controller="Login as login">
+      <h5>Rejestracja</h5>
+          <input type="text" placeholder="Login" ></input>
+          <input type="password" placeholder="Password" ></input>
+          <input type="password" placeholder="Confirm Password" ></input>
+          <input type="button" ng-click="login.openLogin()" value="Zatwierdz"></input>
+  </div></div>
+  </center>
+	<div class = "footer"></div>
+
+
 </body>
 </html>

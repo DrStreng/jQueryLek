@@ -7,7 +7,14 @@ body{
     width: 900px;
 }
 
-h1,h2,h3,h4,h5,input{
+.hoverh1 {
+  background-color: red;
+}
+.toggleClassh1{
+  background-color: #D2BA08;  
+}
+
+h1,h2,h3,h4,h5, .register{
     display: none;
 }
 
@@ -18,14 +25,26 @@ h1,h2,h3,h4,h5,input{
     font-family: 'Comfortaa', cursive;
     color:#FFFFFF;
 }
+
+.test{
+    height: 220px;
+    background: url('../images/red-wallpaper-2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: -0px -200px;
+    font-family: 'Comfortaa', cursive;
+    color:#FFFFFF;
+}
+
 .log {
     padding: 0 10px;
 }
 
 .logo-char{
     position: absolute;
-    bottom: -20px;
-    left: 60%;
+    bottom: -40px;
+    right: 0;
+    margin-right:40px;
     max-height: 220px;
 }
 
@@ -37,9 +56,9 @@ h1,h2,h3,h4,h5,input{
 }
 
 .navigation{
-    background-color: rgb(183, 5, 39);
-    height: 35px;
-    border-top: 1px solid #D2BA08;
+    background-color: rgb(144, 183, 180);
+    height: 37px;
+    border-top: 1px solid rgb(55, 82, 80);
 }
 
 .nav {
@@ -59,8 +78,15 @@ h1,h2,h3,h4,h5,input{
     position: relative;
 }
 
-.nav li a {
-    background-color: rgb(183, 5, 39);
+.nav li > ul > li > a  {
+    background-color: rgb(144, 183, 180);
+    color: #fff;
+    display: block;
+    padding: 7px 8px;
+    text-decoration: none;
+}
+
+.nav li > a  {
     color: #fff;
     display: block;
     padding: 7px 8px;
@@ -68,7 +94,7 @@ h1,h2,h3,h4,h5,input{
 }
 
 .nav li a:hover {
-    background-color:rgb(117, 3, 25);
+    background-color:rgba(87, 144, 140,0.5);
 }
 
 .nav ul {
@@ -79,11 +105,14 @@ h1,h2,h3,h4,h5,input{
     padding: 0px;
 }
 
-.nav ul a {
-    padding: 7px 8px;
-    border-top: 1px solid #D2BA08;
+.footer{
+    background-color: #080808;
+    width:100%;
+    color:#FFF;
+    position: absolute;
+    margin-bottom: 0px;
+    bottom: 0px;
 }
-
 .register input {
     box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -98,9 +127,8 @@ h1,h2,h3,h4,h5,input{
 }
 .register {
     padding: 10px;
-    background-color: #fff;
+    background-color: #e6e6e6;
     border-radius: 5px 5px 0 0;
-    border: 7px solid #f0f0f0;
     max-width: 700px;
 }
 

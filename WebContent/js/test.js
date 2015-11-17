@@ -5,8 +5,23 @@ $(document).ready(function () {
     		$('ul', this).fadeOut();
 	});
 
+    $("#imie").inputFocus('setText',{text:"podaj imie"}).inputFocus('setRequired');
+    $("#nazwisko").inputFocus('setText',{text:"podaj Nazwisko"}).inputFocus('setRequired');
+
     $(".hide").click(function(){
 		$("h1").hide();
+	});
+
+	$('.background').hover(function(){
+  		$("h1").toggleClass('hoverh1');
+	});
+
+	$('.background').hover(function(){
+  		$(".logo").toggleClass('test');
+	});
+
+	$('.backgroundper').click(function(){
+  		$("h1").toggleClass('toggleClassh1');
 	});
 	
 	$(".show").click(function(){
@@ -31,15 +46,15 @@ $(document).ready(function () {
 		$("h2").hide();
 		$("h4").hide();
 		$("h5").slideDown();
-		$("input").slideDown();
+		$(".register").slideDown();
+
 	});
 
 	$(".1").click(function(){
 		$("h1").hide();
 		$("h3").hide();
 		$("h4").hide();
-		$("h5").hide();
-		$("input").hide();
+		$(".register").hide();
 		$("h2").slideDown();
 	});
 
@@ -47,8 +62,7 @@ $(document).ready(function () {
 		$("h1").hide();
 		$("h2").hide();
 		$("h4").hide();
-		$("h5").hide();
-		$("input").hide();
+		$(".register").hide();
 		$("h3").slideDown();
 	});
 
@@ -56,8 +70,7 @@ $(document).ready(function () {
 		$("h1").hide();
 		$("h3").hide();
 		$("h2").hide();
-		$("h5").hide();
-		$("input").hide();
+		$(".register").hide();
 		$("h4").slideDown();
 	});
 	
@@ -65,8 +78,7 @@ $(document).ready(function () {
 		$("h1").hide();
 		$("h3").hide();
 		$("h2").hide();
-		$("h5").hide();
-		$("input").hide();
+		$(".register").hide();
 		$("h4").hide();
 	});
 
@@ -74,8 +86,12 @@ $(document).ready(function () {
 		$("h1").hide();
 		$("h3").hide();
 		$("h2").hide();
-		$("h5").hide();
-		$("input").hide();
+		$(".register").hide();
 		$("h4").hide();
 	});
+
+	$("button").click(function(){
+        $("#p1").css("color", "red").slideUp(1000).slideDown(1000);
+    });
 });
+

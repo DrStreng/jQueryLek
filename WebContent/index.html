@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="./js/myplugin.js"></script>
 <script src="./js/test.js"></script>
 <link rel="stylesheet" type="text/css" href="./css/head.css" />
 
@@ -12,9 +13,9 @@
 <body>
 	<div class = "logo">
 		<a class="home1" href="#">jQueryLek</a>
-		<img class="logo-char" src="./images/1.png" />
+		<img class="logo-char" src="./images/anime_nurse_render_by_nekocrystal_chii-d4kjud5.png" />
 	</div>
-	  	<div class="navigation">
+	<div class="navigation">
   		<ul class="nav">
   			<li>
   				<a class="home2" href="#">Home</a>
@@ -27,6 +28,8 @@
   					<li><a class ="fadeIn"     href="#">fadeIn</a></li>
             <li><a class ="fadeOut"    href="#">fadeOut</a></li>
             <li><a class ="fadeToggle" href="#">fadeToggle</a></li>
+            <li><a class ="background" href="#">background</a></li>
+            <li><a class ="backgroundper" href="#">background</a></li>
   				</ul>
   			</li>
   			<li>
@@ -41,23 +44,29 @@
   				<a class="reg" href="#">Register</a>
   			</li>
   		</ul>
-  	</div>
-    <center>
+  </div>
+<center>
 	 <div class = "midlaine">
-   <h1>TEST</h1>
-   <h2>Jakis Addres</h2>
-   <h3>O nas:<p> Jakiś Tekst</p></h3>
-   <h4>Pomoc<br /><p>W czym ci pomuc</p></h4>
-   <div class="register">
-      <div class="log" ng-controller="Login as login">
-      <h5>Rejestracja</h5>
-          <input type="text" placeholder="Login" ></input>
+     <h1>TEST</h1>
+     <h2>Jakis Addres</h2>
+     <h3>O nas:<p> Jakiś Tekst</p></h3>
+     <h4>Pomoc<br /><p>W czym ci pomuc</p></h4>
+     <div class="register">
+     <form>
+          <h5>Rejestracja</h5>
+          <input type="text" id="imie" class="myForm1"></input>
+          <input type="text" id="nazwisko" class="myForm2"></input>
           <input type="password" placeholder="Password" ></input>
           <input type="password" placeholder="Confirm Password" ></input>
           <input type="button" ng-click="register.Register()" value="Zatwierdz"></input>
-  </div></div>
-  </center>
-	<div class = "footer"></div>
+      </form>
+      </div>
+    </div>
+</center>
+	<div class = "footer">
+  <p id="p1">jQuery TAKI FAJNY</p>
+   <button>Click me</button> 
+  </div>
 
 
 </body>

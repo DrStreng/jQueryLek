@@ -1,73 +1,69 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="./js/myplugin.js"></script>
-<script src="./js/test.js"></script>
-<link rel="stylesheet" type="text/css" href="./css/head.css" />
-
-
-</head>
-<body>
-	<div class = "logo">
-		<a class="home1" href="#">jQueryLek</a>
-		<img class="logo-char" src="./images/anime_nurse_render_by_nekocrystal_chii-d4kjud5.png" />
-	</div>
-	<div class="navigation">
-  		<ul class="nav">
-  			<li>
-  				<a class="home2" href="#">Home</a>
-  			</li>
-  			<li>
-  				<a href="#">Kategories</a>
-  				<ul>
-  					<li><a class="show"        href="#">show</a></li>
-  					<li><a class="hide"        href="#">hide</a></li>
-  					<li><a class ="fadeIn"     href="#">fadeIn</a></li>
-            <li><a class ="fadeOut"    href="#">fadeOut</a></li>
-            <li><a class ="fadeToggle" href="#">fadeToggle</a></li>
-            <li><a class ="background" href="#">background</a></li>
-            <li><a class ="backgroundper" href="#">background</a></li>
-  				</ul>
-  			</li>
-  			<li>
-  				<a href="#">About</a>
-  				<ul>
-  					<li><a class="1" href="#">Contact</a></li>
-  					<li><a class="2" href="#">About Use</a></li>
-  					<li><a class="3" href="#">Help</a></li>
-  				</ul>
-  			</li>
-  			<li>
-  				<a class="reg" href="#">Register</a>
-  			</li>
-  		</ul>
-  </div>
-<center>
-	 <div class = "midlaine">
-     <h1>TEST</h1>
-     <h2>Jakis Addres</h2>
-     <h3>O nas:<p> Jakiś Tekst</p></h3>
-     <h4>Pomoc<br /><p>W czym ci pomuc</p></h4>
-     <div class="register">
-     <form>
-          <h5>Rejestracja</h5>
-          <input type="text" id="imie" class="myForm1"></input>
-          <input type="text" id="nazwisko" class="myForm2"></input>
-          <input type="password" placeholder="Password" ></input>
-          <input type="password" placeholder="Confirm Password" ></input>
-          <input type="button" ng-click="register.Register()" value="Zatwierdz"></input>
-      </form>
+  <head>
+    <meta charset="UTF-8">
+    <title>Insert title here</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="./js/test.js"></script>
+    <link rel="stylesheet" type="text/css" href="./css/head.css" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="header">
+        <div class="background">
+          <img class="logo" src="./images/Pharmacy-Cross.png"/>
+          <div class="Header1">
+            <a href="#">jQueryLek</a>
+            <small>Polsko Japońska Akademia Technik Komputerowych</small>
+          </div>
+        </div>
       </div>
+      <div id="menu">
+        <ul class="nav">
+          <li><a href="#">Główna</a></li>
+          <li><a href="#"><div class="down">O Nas</div></a>
+            <div class="border">
+              <ul class="nav2">
+                <li><a href="#">Zmiana 1</a></li>
+                <li><a href="#">Zmiana 2</a></li>
+                <li><a href="#"><div class="right">Test</div></a>
+                <ul>
+                  <li><a href="#">test 1</a></li>
+                  <li><a href="#">test 2</a></li>
+                  <li><a href="#">test 3</a></li>
+                </ul></li>
+                <li><a href="#">Zmiana 4</a></li>
+                <li><a href="#">Zmiana 5</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#">Leki</a></li>
+          <li><a href="#">Sklep</a></li>
+          <li><a href="#"><div class="down">Ustawienia</div></a>
+            <div class="border">
+              <ul class="nav2">
+                <li><a href="#">Zmiana 1</a></li>
+                <li><a href="#">Zmiana 2</a></li>
+                <li><a href="#"><div class="right">Test</div></a>
+                <ul>
+                  <li><a href="#">test 1</a></li>
+                  <li><a href="#">test 2</a></li>
+                  <li><a href="#">test 3</a></li>
+                </ul></li>
+                <li><a href="#">Zmiana 4</a></li>
+                <li><a href="#">Zmiana 5</a></li>
+              </ul>
+            </div>
+            </li>
+        </ul>
+        <form class="nav-bar" action="#">
+          <input class="form" placeholder="Search" />
+        </form>
+      </div>
+      <div id="content">
+          <p>Tu wybuduje sobie domek</p>
+      </div>
+      <div id=footer></div>
     </div>
-</center>
-	<div class = "footer">
-  <p id="p1">jQuery TAKI FAJNY</p>
-   <button>Click me</button> 
-  </div>
-
-
-</body>
+  </body>
 </html>

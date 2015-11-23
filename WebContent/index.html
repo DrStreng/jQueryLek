@@ -6,6 +6,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="./js/test.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/head.css" />
+    <link rel="stylesheet" type="text/css" href="./css/content.css" />
+    <link rel="stylesheet" type="text/css" href="./css/footer.css" />
   </head>
   <body>
     <div id="container">
@@ -20,38 +22,37 @@
       </div>
       <div id="menu">
         <ul class="nav">
-          <li><a href="#">Główna</a></li>
+          <li><a class="glowna" href="#">Główna</a></li>
           <li><a href="#"><div class="down">O Nas</div></a>
             <div class="border">
               <ul class="nav2">
-                <li><a href="#">Zmiana 1</a></li>
-                <li><a href="#">Zmiana 2</a></li>
+                <li><a href="#">#</a></li>
+                <li><a href="#">#</a></li>
                 <li><a href="#"><div class="right">Test</div></a>
                 <ul>
                   <li><a href="#">test 1</a></li>
                   <li><a href="#">test 2</a></li>
                   <li><a href="#">test 3</a></li>
                 </ul></li>
-                <li><a href="#">Zmiana 4</a></li>
-                <li><a href="#">Zmiana 5</a></li>
+                <li><a href="#">#</a></li>
+                <li><a href="#">#</a></li>
               </ul>
             </div>
           </li>
-          <li><a href="#">Leki</a></li>
+          <li><a class="leki" href="#">Leki</a></li>
           <li><a href="#">Sklep</a></li>
           <li><a href="#"><div class="down">Ustawienia</div></a>
             <div class="border">
               <ul class="nav2">
-                <li><a href="#">Zmiana 1</a></li>
-                <li><a href="#">Zmiana 2</a></li>
+                <li><a href="#">#</a></li>
+                <li><a href="#">#</a></li>
                 <li><a href="#"><div class="right">Test</div></a>
                 <ul>
                   <li><a href="#">test 1</a></li>
                   <li><a href="#">test 2</a></li>
                   <li><a href="#">test 3</a></li>
                 </ul></li>
-                <li><a href="#">Zmiana 4</a></li>
-                <li><a href="#">Zmiana 5</a></li>
+                <li><a class="tloClick" href="#">Zmiana Tla</a></li>
               </ul>
             </div>
             </li>
@@ -60,10 +61,89 @@
           <input class="form" placeholder="Search" />
         </form>
       </div>
-      <div id="content">
-          <p>Tu wybuduje sobie domek</p>
+      <div id="content" class="content-block">
+        <div class="section1"><h1>jQuery Lekarstwa</h1>
+          Zadanie zaliczeniowe prowadzone w ramach zajęć z
+          przedmiotu Bogaty Interfejs Użytkownika w Aplikacjach Webowych
+          na wybrany temat zatwierdzony przez prowadzącego zajęcia.
+          Wstęp do  jQuery + pluginy.
+        </div>
+        <div class="section2">
+          <div class="panel-header"><h1>Leki</h1></div>
+          <div class="left-panel">
+            <form class="jakis-formularz" action="#">
+
+              <fieldset>
+                <legend><p>Tesciki tesciki</p></legend>
+                <input class="#" placeholder="#" /><br />
+                <input class="#" placeholder="#" /><br />
+                <input class="#" placeholder="#" /><br />
+              </fieldset>
+              <fieldset>
+                <legend><p>Radio Buttons</p></legend>
+                <input type="radio" name="2" value="1">1<br />
+                <input type="radio" name="2" value="2">2<br />
+                <input type="radio" name="2" value="4" checked >checked<br />
+              </fieldset>
+              <fieldset>
+                <legend><p>Checkbox</p></legend>
+                  <input type="checkbox" name="vehicle" value="Bike">checkbox 1 <br />
+                  <input type="checkbox" name="vehicle" value="Car" checked>checkbox 2 checked <br />
+              </fieldset>
+              <fieldset>
+                <legend><p>Datalist</p></legend>
+                <input list="lek">
+                  <datalist id="lek">
+                    <option value="Paracetamol"></option>
+                    <option value="Apap">
+                    <option value="Ibum">
+                  </datalist>
+                </input>
+              </fieldset>
+              <fieldset>
+                <legend><p>Select</p></legend>
+                <select>
+                  <option>Opcja 1</option>
+                  <option>Opcja 2</option>
+                  <option>Opcja 3</option>
+                </select>
+              </fieldset>
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
+          <div class="right-panel">
+            <p>No co Tam</p>
+          </div>
+        </div>
+        <!-- <div class=section3>tu cos powstanie moze</div>
+        <div class=section4>tu cos powstanie moze</div> -->
+        <footer>
+        <div class="footer-contents">
+          <div class="social">
+            <h3>Social</h3>
+            <a class="youtube" href="https://www.youtube.com">
+              <img src="images/social/play125.png">
+            </a>
+            <a class="tweeter" href="https://twitter.com">
+              <img src="images/social/twitter2.png">
+            </a>
+            <a class="facebook" href="https://www.facebook.com"/>
+              <img src="images/social/facebook4.png">
+            </a>
+            <a class="google" href="http://plus.google.com"/>
+              <img src="images/social/google2.png">
+            </a>
+          </div>
+          <div class="contact">
+            <form class="contact" name="form" method="post">
+              <h3>Contact</h3>
+              <input class="email" name="email" type="text" />
+              <input class="submit" name="submit" type="submit" value="Submit" />
+            </form>
+          </div>
+        </div>
+      </footer>
       </div>
-      <div id=footer></div>
     </div>
   </body>
 </html>

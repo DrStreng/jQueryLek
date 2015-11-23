@@ -1,0 +1,67 @@
+
+.content-block{
+  width: 100%;
+  max-width: 1000px;
+  min-width: 755px;
+  margin: 0 auto;
+}
+
+.section1{
+min-height: 300px;
+}
+
+div #content .jakis-formularz input{
+  margin-top:10px;
+  margin-bottom: 10px;
+  color:#34495E;
+  border: 2px solid #34495E;
+  border-radius: 6px;
+  font-size: 15px;
+  height: 22px;
+}
+
+div #content .jakis-formularz{
+padding-right: 15px;
+padding-left: 15px;
+}
+
+div #content .section2{
+  display: none;
+}
+.section2{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.section2 p{
+  font-size: 18px;
+  font-weight: bold;
+}
+.panel-header h1{
+  border-bottom: 1px solid #ccc;
+  font-weight: bold;
+}
+
+ .right-panel, .left-panel{
+  margin-top: 0;
+  margin-bottom: 1px;
+  float:left;
+}
+
+.left-panel{
+  width:28%;
+}
+
+.right-panel{
+  width: 68%;
+  margin-left: 4%;
+}
+.section3{
+  border-bottom: 1px solid #ccc;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.section4{
+  border-bottom: 1px solid #ccc;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}

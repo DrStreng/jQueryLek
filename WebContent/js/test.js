@@ -1,4 +1,5 @@
 $(document).ready(function () {
+// *********MENU BAR***********************************************
 
   $(".nav li").hover(function(){
     $(".down",this).toggleClass("down2").css("color","#1ABC9C");
@@ -13,6 +14,29 @@ $(document).ready(function () {
       $(".border",this).hide();
   });
 
+// ***************PLUGIN*****************************************
+  $(".zatwierdz").click(function(){
+    $(".right-panel p").cotam1();
+    $(".right-panel h1").cotam2("Co jest? Hałas!");
+    $(".right-panel h2").cotam3({text: "Tygrysek",color: "orange",fontStyle:"italic"});
+  });
+
+  $(".cena").blur(function() {
+  		$(".cena").inputFocus('validateCena');
+  });
+
+  $(".Checkbox").click(function() {
+      $(".Checkbox").inputFocus('validateCheckbox');
+  });
+
+  $(".email").blur(function() {
+      $(".email").inputFocus('validateEmail');
+  });
+
+  $(".nazwa").blur(function() {
+      $(".nazwa").inputFocus('validateNazwa');
+  });
+// ******************SOMETHING**************************************
   $(".leki").click(function(){
     $(".section1").hide();
     $(".section2").show();

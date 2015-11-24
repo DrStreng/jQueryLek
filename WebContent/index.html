@@ -2,8 +2,9 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Insert title here</title>
+    <title>Lek</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="./js/myplugin.js"></script>
     <script src="./js/test.js"></script>
     <link rel="stylesheet" type="text/css" href="./css/head.css" />
     <link rel="stylesheet" type="text/css" href="./css/content.css" />
@@ -71,53 +72,53 @@
         <div class="section2">
           <div class="panel-header"><h1>Leki</h1></div>
           <div class="left-panel">
-            <form class="jakis-formularz" action="#">
-
+            <form class="jakis-formularz">
               <fieldset>
                 <legend><p>Tesciki tesciki</p></legend>
-                <input class="#" placeholder="#" /><br />
-                <input class="#" placeholder="#" /><br />
-                <input class="#" placeholder="#" /><br />
+                <input class="nazwa" type="text" placeholder="" /><br />
+                <input class="cena" type="number" placeholder="" /><br />
               </fieldset>
-              <fieldset>
+              <!-- <fieldset>
                 <legend><p>Radio Buttons</p></legend>
-                <input type="radio" name="2" value="1">1<br />
-                <input type="radio" name="2" value="2">2<br />
-                <input type="radio" name="2" value="4" checked >checked<br />
-              </fieldset>
+                <input type="radio" name="a" value="1">1<br />
+                <input type="radio" name="a" value="2">2<br />
+                <input type="radio" name="a" value="4" checked >checked<br />
+              </fieldset> -->
               <fieldset>
                 <legend><p>Checkbox</p></legend>
-                  <input type="checkbox" name="vehicle" value="Bike">checkbox 1 <br />
-                  <input type="checkbox" name="vehicle" value="Car" checked>checkbox 2 checked <br />
+                  <input type="checkbox" class="Checkbox" checked> bez recepty <br />
               </fieldset>
-              <fieldset>
+              <!-- <fieldset>
                 <legend><p>Datalist</p></legend>
                 <input list="lek">
                   <datalist id="lek">
+                    <option value="Gripex"></option>
                     <option value="Paracetamol"></option>
                     <option value="Apap">
                     <option value="Ibum">
                   </datalist>
                 </input>
-              </fieldset>
-              <fieldset>
+              </fieldset> -->
+              <!-- <fieldset>
                 <legend><p>Select</p></legend>
                 <select>
-                  <option>Opcja 1</option>
-                  <option>Opcja 2</option>
-                  <option>Opcja 3</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
                 </select>
-              </fieldset>
-              <input type="submit" value="Submit" />
+              </fieldset> -->
+              <a href="#" class="zatwierdz" class="submit">Zatwierdz</a>
             </form>
           </div>
           <div class="right-panel">
-            <p>No co Tam</p>
+            <p></p><h1></h1><h2></h2>
           </div>
         </div>
         <!-- <div class=section3>tu cos powstanie moze</div>
         <div class=section4>tu cos powstanie moze</div> -->
-        <footer>
+
+      </div>
+
         <div class="footer-contents">
           <div class="social">
             <h3>Social</h3>
@@ -137,13 +138,11 @@
           <div class="contact">
             <form class="contact" name="form" method="post">
               <h3>Contact</h3>
-              <input class="email" name="email" type="text" />
-              <input class="submit" name="submit" type="submit" value="Submit" />
+              <input class="email" name="email" placeholder="nowak@host.pl" /><br />
             </form>
           </div>
         </div>
-      </footer>
-      </div>
+
     </div>
   </body>
 </html>
